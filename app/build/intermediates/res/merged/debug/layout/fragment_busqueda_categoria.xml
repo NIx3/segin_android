@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="christopher.workshopandroid.BusquedaCategoria">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="77dp" />
+
+        <RadioButton
+            android:id="@+id/radio_calidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button_buscardatos"
+            android:layout_alignRight="@+id/button_buscardatos"
+            android:layout_alignTop="@+id/radioGroup"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radio_seguridad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radio_calidad"
+            android:layout_alignStart="@+id/radio_calidad"
+            android:layout_below="@+id/radio_calidad"
+            android:text="RadioButton" />
+
+        <Button
+            android:id="@+id/button_buscardatos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/radio_seguridad"
+            android:layout_marginTop="49dp"
+            android:text="Buscar Datos" />
+
+        <ListView
+            android:id="@+id/ListaBusqueda"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/button_buscardatos"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="26dp"
+            android:text="Seleccione el Filtro" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio_seguridad"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:text="Button" />
+    </RelativeLayout>
+
+</FrameLayout>
